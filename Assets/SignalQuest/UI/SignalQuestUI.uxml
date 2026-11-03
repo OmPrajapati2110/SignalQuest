@@ -1,0 +1,44 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="SignalQuestUI.uss" />
+  <ui:VisualElement class="app">
+    <ui:VisualElement class="header">
+      <ui:Label text="SIGNAL QUEST" class="brand" />
+      <ui:Label text="Restore the relay station · Unity prototype" class="subtitle" />
+      <ui:Label name="progress" class="progress" />
+    </ui:VisualElement>
+    <ui:VisualElement name="station-window" class="station-window" picking-mode="Ignore">
+      <ui:Label text="AIRLOCK                 BEACON                 ROUTER                 SHIELD" class="station-caption" picking-mode="Ignore" />
+    </ui:VisualElement>
+    <ui:VisualElement name="missions" class="missions" />
+    <ui:ScrollView class="content-scroll">
+      <ui:VisualElement name="workspace" class="workspace">
+        <ui:VisualElement name="left-panel" class="left-panel panel">
+          <ui:Label name="mission-title" class="mission-title" />
+          <ui:Label name="brief" class="brief" />
+          <ui:VisualElement class="gate-controls">
+            <ui:DropdownField name="gate-choice" label="Gate 01" />
+            <ui:DropdownField name="stage-choice" label="Gate 02" />
+          </ui:VisualElement>
+          <ui:VisualElement name="board-host" />
+          <ui:Label text="Click A/B to toggle inputs. Lines and 0/1 labels show the current signals." class="small" />
+          <ui:VisualElement class="actions">
+            <ui:Button name="diagnose" text="Run diagnostics" class="primary" />
+            <ui:Button name="hint" text="Reveal hint" />
+            <ui:Button name="next" text="Next mission" />
+          </ui:VisualElement>
+          <ui:Label name="feedback" class="feedback" />
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" class="right-panel panel">
+          <ui:Label text="TRUTH TABLE" class="eyebrow" />
+          <ui:Label text="Every input pair must match the target." class="small" />
+          <ui:VisualElement name="truth-table" class="truth-table" />
+          <ui:Label text="FIELD NOTES" class="eyebrow" />
+          <ui:Label name="notes" class="small notes" />
+          <ui:Toggle name="reduce-motion" label="Reduce station motion" />
+          <ui:Button name="reset" text="Reset ratings" />
+          <ui:Label text="Keyboard: Tab / Shift+Tab to move; Enter or Space to activate; arrow keys in menus." class="small" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+    </ui:ScrollView>
+  </ui:VisualElement>
+</ui:UXML>

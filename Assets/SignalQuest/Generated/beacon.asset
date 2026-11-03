@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6f01a8170044b52956c5e750d4174c, type: 3}
+  m_Name: beacon
+  m_EditorClassIdentifier: Assembly-CSharp::SignalQuest.MissionDefinition
+  id: beacon
+  title: Distress beacon
+  brief: A and B are distress switches. Enable Y if either or both switches are pressed.
+  hint: Include the case where both switches are pressed.
+  cascade: 0
+  target: 00000000010000000100000001000000i
