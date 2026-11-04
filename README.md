@@ -1,5 +1,9 @@
 # Signal Quest
 
+🎮 **[Play Signal Quest in your browser](https://omprajapati21.itch.io/signal-quest)**
+
+Built with Unity and C#. Desktop browser recommended.
+
 A Unity circuit puzzle prototype that teaches Boolean reasoning through a space-station repair scenario. Players select logic gates, inspect signal values, and repair systems by satisfying every row of a truth table.
 
 **Stack:** Unity · C# · UI Toolkit · ScriptableObjects · Prefabs · PlayerPrefs
